@@ -34,8 +34,10 @@ All payments are securely processed through Stripe. We do not store your payment
 
 ### Service Description
 
-We provide technical consulting services through individual remote calls on a one-off payment basis, including but not limited to:
+We provide technical consulting services through our Advisory tier, which includes:
 
+- Recurring consultation access through our calendar booking system
+- Reasonable frequency of calls within each billing period
 - Technical advisory
 - Architecture review
 - Technology selection guidance
@@ -45,9 +47,10 @@ We provide technical consulting services through individual remote calls on a on
 
 ### Payment Terms
 
-- Payment is required in full before the scheduled consultation call
+- Recurring billing (monthly)
+- Payment is processed automatically at the beginning of each billing period
+- Access to calendar booking system is provided upon payment confirmation
 - All payments are processed securely through Stripe
-- Each consultation is a separate transaction with no recurring charges
 - Refunds may be provided at our discretion if the service cannot be delivered as promised
 
 ### Client Responsibilities
@@ -77,8 +80,30 @@ We provide technical consulting services through individual remote calls on a on
 
 - We provide advice based on professional experience and best practices
 - We are not liable for business decisions made based on our consultation
-- Maximum liability is limited to the amount paid for the individual consultation
+- Maximum liability is limited to the amount paid for the current billing period
 - Advice is provided "as-is" without warranties of specific outcomes
+
+### Service Terms
+
+**Calendar Booking System:**
+- Clients have access to our calendar booking system
+- Calls can be scheduled at reasonable frequency within each billing period
+- Booking availability is subject to our schedule and capacity
+
+**Usage Guidelines:**
+- Calendar booking system is intended for legitimate consulting needs
+- Reasonable frequency means calls should be spaced appropriately and serve genuine business purposes
+- Abuse of the booking system includes, but is not limited to:
+  - Excessive booking frequency that prevents other clients from accessing services
+  - Booking calls without genuine consulting needs
+  - Repeated no-shows or last-minute cancellations
+  - Any behavior that disrupts the service delivery to other clients
+
+**Contract Termination:**
+- We reserve the right to unilaterally terminate the service contract in cases of system abuse
+- Termination may occur immediately upon notice if abuse is determined
+- No refunds will be provided for the current billing period in cases of abuse-related termination
+- Clients terminated for abuse may be prohibited from future service access
 
 ### Cancellation and Rescheduling
 
