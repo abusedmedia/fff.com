@@ -50,16 +50,16 @@ export default function(eleventyConfig) {
 
   // Copy static assets (excluding CSS which is handled by Tailwind)
   eleventyConfig.addPassthroughCopy('src/assets/images');
-  eleventyConfig.addPassthroughCopy('src/assets/blog');
+  //eleventyConfig.addPassthroughCopy('src/assets/blog');
   eleventyConfig.addPassthroughCopy('src/public');
   eleventyConfig.ignores.add('src/assets/css/');
 
   // Add collections
-  eleventyConfig.addCollection('blog', function(collectionApi) {
-    return collectionApi.getFilteredByGlob('src/content/blog/*.md')
-      .filter(item => !item.data.draft)
-      .sort((a, b) => b.date - a.date);
-  });
+  // eleventyConfig.addCollection('blog', function(collectionApi) {
+  //   return collectionApi.getFilteredByGlob('src/content/blog/*.md')
+  //     .filter(item => !item.data.draft)
+  //     .sort((a, b) => b.date - a.date);
+  // });
 
   eleventyConfig.addCollection('projects', function(collectionApi) {
     return collectionApi.getFilteredByGlob('src/content/projects/*.md')
