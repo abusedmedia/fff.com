@@ -63,8 +63,9 @@ function processDirectory(dirPath) {
 const blogDir = path.join(__dirname, '..', 'src', 'content', 'blog');
 
 if (!fs.existsSync(blogDir)) {
-  console.error('Blog directory not found:', blogDir);
-  process.exit(1);
+  console.log('Blog directory not found:', blogDir);
+  console.log('Skipping Nunjucks syntax fixing.');
+  process.exit(0);
 }
 
 console.log('Fixing Nunjucks syntax in blog posts...');
