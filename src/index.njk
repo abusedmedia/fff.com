@@ -287,12 +287,24 @@ description: Guiding companies through the AI revolution with hands-on expertise
 
 
         <div>
-          <a
-            href="#"
-            class="block w-full px-8 py-4 border-2 border-white hover:bg-white hover:text-black text-white font-bold text-xl uppercase tracking-wide transition-all duration-200 text-center"
+          <div class="flex items-start gap-3 mb-4">
+            <input
+              type="checkbox"
+              id="advisory-tos-checkbox"
+              class="mt-1 w-5 h-5 cursor-pointer"
+              onchange="document.getElementById('advisory-subscribe-btn').disabled = !this.checked; document.getElementById('advisory-subscribe-btn').classList.toggle('opacity-50', !this.checked); document.getElementById('advisory-subscribe-btn').classList.toggle('cursor-not-allowed', !this.checked);"
+            >
+            <label for="advisory-tos-checkbox" class="text-sm text-gray-300 cursor-pointer">
+              I have read and agree to the <a href="/privacy-tos/" class="text-red-600 hover:underline" target="_blank">Privacy Policy & Terms of Service</a>
+            </label>
+          </div>
+          <button
+            id="advisory-subscribe-btn"
+            disabled
+            class="block w-full px-8 py-4 border-2 border-white hover:bg-white hover:text-black text-white font-bold text-xl uppercase tracking-wide transition-all duration-200 text-center opacity-50 cursor-not-allowed disabled:hover:bg-transparent disabled:hover:text-white"
           >
             Subscribe now
-          </a>
+          </button>
           <p class="text-xs text-gray-500 text-center mt-2">You'll be redirected to Stripe checkout</p>
         </div>
       </div>
@@ -341,12 +353,24 @@ description: Guiding companies through the AI revolution with hands-on expertise
         </div>
 
         <div>
-          <a
-            href="#"
-            class="block w-full px-8 py-4 bg-red-600 hover:bg-red-700 text-white font-bold text-xl uppercase tracking-wide transition-all duration-200 text-center"
+          <div class="flex items-start gap-3 mb-4">
+            <input
+              type="checkbox"
+              id="partnership-tos-checkbox"
+              class="mt-1 w-5 h-5 cursor-pointer"
+              onchange="document.getElementById('partnership-subscribe-btn').disabled = !this.checked; document.getElementById('partnership-subscribe-btn').classList.toggle('opacity-50', !this.checked); document.getElementById('partnership-subscribe-btn').classList.toggle('cursor-not-allowed', !this.checked);"
+            >
+            <label for="partnership-tos-checkbox" class="text-sm text-gray-300 cursor-pointer">
+              I have read and agree to the <a href="/privacy-tos/" class="text-red-600 hover:underline" target="_blank">Privacy Policy & Terms of Service</a>
+            </label>
+          </div>
+          <button
+            id="partnership-subscribe-btn"
+            disabled
+            class="block w-full px-8 py-4 bg-red-600 hover:bg-red-700 text-white font-bold text-xl uppercase tracking-wide transition-all duration-200 text-center opacity-50 cursor-not-allowed disabled:opacity-50 disabled:cursor-not-allowed"
           >
             Subscribe now
-          </a>
+          </button>
           <p class="text-xs text-gray-500 text-center mt-2">You'll be redirected to Stripe checkout</p>
         </div>
       </div>
