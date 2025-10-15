@@ -1,0 +1,75 @@
+---
+layout: layouts/base.njk
+title: Blog
+description: Insights on AI integration, Retool development, and digital transformation
+pagination:
+  data: collections.blog
+  size: 10
+  alias: posts
+---
+
+<div class="max-w-6xl mx-auto px-6 py-20">
+  <header class="mb-16">
+    <h1 class="text-6xl font-black mb-6 uppercase">Blog</h1>
+    <p class="text-2xl text-gray-400">
+      Insights on AI integration, Retool development, and digital transformation
+    </p>
+  </header>
+
+  <div class="space-y-12">
+    {% for post in posts %}
+    <article class="border-4 border-white hover:border-red-600 p-8 transition-all duration-300">
+      <div class="mb-4">
+        {% if post.data.tags %}
+        <div class="flex gap-2 mb-4">
+          {% for tag in post.data.tags %}
+          <a href="/tags/{{ tag | slugify }}/" class="px-3 py-1 bg-red-600 text-white text-sm font-bold uppercase hover:bg-red-700 transition-colors">
+            {{ tag }}
+          </a>
+          {% endfor %}
+        </div>
+        {% endif %}
+      </div>
+
+      <h2 class="text-4xl font-black mb-4">
+        <a href="{{ post.url }}" class="hover:text-red-600 transition-colors">
+          {{ post.data.title }}
+        </a>
+      </h2>
+
+      <div class="flex items-center gap-4 text-gray-400 mb-4">
+        <time datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+        <span>•</span>
+        <span>{{ post.templateContent | readingTime }} min read</span>
+      </div>
+
+      {% if post.data.excerpt %}
+      <p class="text-xl text-gray-300 mb-6 leading-relaxed">{{ post.data.excerpt }}</p>
+      {% endif %}
+
+      <a href="{{ post.url }}" class="inline-block px-6 py-3 border-2 border-white hover:bg-white hover:text-black text-white font-bold uppercase tracking-wide transition-all duration-200">
+        Read more
+      </a>
+    </article>
+    {% endfor %}
+  </div>
+
+  {% if pagination.href.previous or pagination.href.next %}
+  <nav class="mt-16 flex justify-between items-center">
+    <div>
+      {% if pagination.href.previous %}
+      <a href="{{ pagination.href.previous }}" class="px-8 py-4 border-2 border-white hover:bg-white hover:text-black text-white font-bold uppercase tracking-wide transition-all duration-200">
+        ← Newer posts
+      </a>
+      {% endif %}
+    </div>
+    <div>
+      {% if pagination.href.next %}
+      <a href="{{ pagination.href.next }}" class="px-8 py-4 border-2 border-white hover:bg-white hover:text-black text-white font-bold uppercase tracking-wide transition-all duration-200">
+        Older posts →
+      </a>
+      {% endif %}
+    </div>
+  </nav>
+  {% endif %}
+</div>

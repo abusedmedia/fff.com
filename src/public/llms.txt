@@ -1,0 +1,73 @@
+# AI & Digital Transformation Consultant
+
+> 20+ years technologist specializing in AI integration, Retool development, and digital transformation for startups and SMBs. Founder of EloquentOps.com (Retool Agency Partner) and DeckServe.com.
+
+## About
+
+Experienced technology consultant helping companies navigate AI adoption and digital transformation. Expertise in rapid prototyping, system integration, and building scalable internal tools using Retool as a central digital hub.
+
+## Services
+
+**Advisory Tier (€1,000/month)**
+Strategic guidance for startups and early-stage teams who need technical and strategic direction but can execute internally. Includes weekly strategic calls, architecture decisions, and best practices recommendations.
+
+**Partnership Tier (€3,000/month)**
+Strategic plus operational execution for SMBs pushing digitalization and AI. Includes weekly planning calls, hands-on implementation, continuous iteration, AI integration, and automation.
+
+## Core Expertise
+
+- AI Integration & Strategy: Guiding companies through practical AI adoption, focusing on value delivery before complexity
+- Retool Development: Official Retool Agency Partner, specializing in building unified digital hubs that connect data, services, automations, and AI agents
+- Digital Transformation: Helping businesses move from disconnected systems to integrated, automated workflows
+- Technical Architecture: Designing scalable, evolutionary systems that grow with business needs
+- Rapid Implementation: Weekly iterations with immediate, measurable results
+
+## Technology Stack
+
+- Retool for unified digital hubs and internal tools
+- AI agents and LLM integration
+- API integrations (CRM, ERP, databases)
+- Automation workflows
+- Cloud-first with on-premises options when needed
+
+## Philosophy
+
+**Experiment First, Secure Later**: Start small, prove value, then move to privacy and compliance. Don't put the cart before the horse by over-engineering security before validating the solution brings actual value.
+
+**Speed and Iteration**: Rapid implementation with weekly iterations. Zero wasted time. Continuous innovation.
+
+**Fixed Pricing**: Transparent monthly fees with no surprises, controlled budgets, and measurable ROI.
+
+## Projects
+
+- EloquentOps.com: Boutique consultancy specialized in Retool development (official Retool Agency Partner)
+- DeckServe.com: Automated PDF generation tool for presentations and documents
+
+## Content Areas
+
+This site includes blog posts and articles covering:
+- AI adoption strategies for SMBs
+- Retool development best practices
+- Digital transformation case studies
+- Low-code/no-code platform insights
+- System integration patterns
+- Automation workflows
+
+## Key Pages
+
+- Homepage: Introduction to services and approach
+- Blog: Technical articles and insights on AI, Retool, and digital transformation
+- Projects: Portfolio showcasing client work and personal projects
+- About: Background and experience details
+- Pricing: Detailed service tiers and engagement models
+
+## Background
+
+20+ years of hands-on technology experience blending deep technical skills with strategic insight. Previous role as Co-Founder & CTO at TODO.TO.IT. Currently advising startups and growth-stage teams on AI integration and digital transformation.
+
+## Contact
+
+Email: info@yourdomain.com
+Website: https://yourdomain.com
+EloquentOps: https://eloquentops.com
+DeckServe: https://deckserve.com

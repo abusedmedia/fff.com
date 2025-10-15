@@ -1,0 +1,46 @@
+---
+layout: layouts/base.njk
+title: Projects
+description: Portfolio of client work and personal projects
+---
+
+<div class="max-w-6xl mx-auto px-6 py-20">
+  <header class="mb-16">
+    <h1 class="text-6xl font-black mb-6 uppercase">Projects</h1>
+    <p class="text-2xl text-gray-400">
+      Portfolio of client work and personal projects
+    </p>
+  </header>
+
+  <div class="grid md:grid-cols-2 gap-8">
+    {% for project in collections.projects %}
+    <article class="border-4 border-white hover:border-red-600 p-8 transition-all duration-300">
+      {% if project.data.image %}
+      <img src="{{ project.data.image }}" alt="{{ project.data.title }}" class="w-full h-64 object-cover mb-6">
+      {% endif %}
+
+      <h2 class="text-3xl font-black mb-4">{{ project.data.title }}</h2>
+
+      {% if project.data.excerpt %}
+      <p class="text-xl text-gray-300 mb-6 leading-relaxed">{{ project.data.excerpt }}</p>
+      {% endif %}
+
+      {% if project.data.tech %}
+      <div class="flex flex-wrap gap-2 mb-6">
+        {% for technology in project.data.tech %}
+        <span class="px-3 py-1 bg-gray-800 text-white text-sm font-bold uppercase">
+          {{ technology }}
+        </span>
+        {% endfor %}
+      </div>
+      {% endif %}
+
+      {% if project.data.link %}
+      <a href="{{ project.data.link }}" target="_blank" rel="noopener noreferrer" class="inline-block px-6 py-3 bg-red-600 hover:bg-red-700 text-white font-bold uppercase tracking-wide transition-all duration-200">
+        View project
+      </a>
+      {% endif %}
+    </article>
+    {% endfor %}
+  </div>
+</div>

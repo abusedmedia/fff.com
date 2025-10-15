@@ -1,0 +1,71 @@
+---
+layout: layouts/base.njk
+---
+
+<article class="max-w-4xl mx-auto px-6 py-20">
+  <header class="mb-12">
+    <div class="mb-6">
+      {% if tags %}
+      <div class="flex gap-2 mb-4">
+        {% for tag in tags %}
+        <a href="/tags/{{ tag | slugify }}/" class="px-3 py-1 bg-red-600 text-white text-sm font-bold uppercase hover:bg-red-700 transition-colors">
+          {{ tag }}
+        </a>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </div>
+
+    <h1 class="text-5xl md:text-6xl font-black mb-6 leading-tight">{{ title }}</h1>
+
+    <div class="flex items-center gap-6 text-gray-400 text-lg">
+      <time datetime="{{ date | htmlDateString }}">{{ date | readableDate }}</time>
+      <span>•</span>
+      <span>{{ content | readingTime }} min read</span>
+    </div>
+
+    {% if excerpt %}
+    <p class="text-2xl text-gray-300 mt-8 leading-relaxed">{{ excerpt }}</p>
+    {% endif %}
+  </header>
+
+  <div class="prose prose-invert prose-lg max-w-none
+              prose-headings:font-black prose-headings:uppercase
+              prose-h2:text-4xl prose-h2:mt-12 prose-h2:mb-6
+              prose-h3:text-3xl prose-h3:mt-8 prose-h3:mb-4
+              prose-p:text-gray-300 prose-p:leading-relaxed
+              prose-a:text-red-600 prose-a:font-bold prose-a:no-underline hover:prose-a:underline
+              prose-strong:text-white prose-strong:font-bold
+              prose-ul:text-gray-300 prose-ol:text-gray-300
+              prose-code:text-red-600 prose-code:bg-gray-900 prose-code:px-2 prose-code:py-1
+              prose-pre:bg-gray-900 prose-pre:border-2 prose-pre:border-red-600 prose-pre:overflow-x-auto
+              prose-pre:rounded-lg prose-pre:p-6 prose-pre:text-sm
+              prose-blockquote:border-l-4 prose-blockquote:border-red-600 prose-blockquote:text-gray-300">
+    {{ content | safe }}
+  </div>
+
+  <footer class="mt-16 pt-12 border-t-4 border-red-600">
+    <div class="flex justify-between items-center">
+      {% if collections.blog %}
+        {% set previousPost = collections.blog | getPreviousCollectionItem %}
+        {% set nextPost = collections.blog | getNextCollectionItem %}
+
+        <div>
+          {% if previousPost %}
+          <a href="{{ previousPost.url }}" class="text-lg font-bold hover:text-red-600 transition-colors">
+            ← {{ previousPost.data.title }}
+          </a>
+          {% endif %}
+        </div>
+
+        <div class="text-right">
+          {% if nextPost %}
+          <a href="{{ nextPost.url }}" class="text-lg font-bold hover:text-red-600 transition-colors">
+            {{ nextPost.data.title }} →
+          </a>
+          {% endif %}
+        </div>
+      {% endif %}
+    </div>
+  </footer>
+</article>

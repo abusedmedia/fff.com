@@ -1,0 +1,50 @@
+{% set metaTitle = title or site.title %}
+{% set metaDescription = description or excerpt or site.description %}
+{% set metaImage = image or site.image %}
+{% set metaUrl = site.url + page.url %}
+
+<meta property="og:title" content="{{ metaTitle }}">
+<meta property="og:description" content="{{ metaDescription }}">
+<meta property="og:type" content="{% if tags %}article{% else %}website{% endif %}">
+<meta property="og:url" content="{{ metaUrl }}">
+{% if metaImage %}
+<meta property="og:image" content="{{ site.url }}{{ metaImage }}">
+{% endif %}
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ metaTitle }}">
+<meta name="twitter:description" content="{{ metaDescription }}">
+{% if metaImage %}
+<meta name="twitter:image" content="{{ site.url }}{{ metaImage }}">
+{% endif %}
+
+{% if tags and date %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "{{ title }}",
+  "description": "{{ metaDescription }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ site.author }}"
+  },
+  "datePublished": "{{ date | htmlDateString }}",
+  "url": "{{ metaUrl }}"
+  {% if metaImage %}
+  ,"image": "{{ site.url }}{{ metaImage }}"
+  {% endif %}
+}
+</script>
+{% else %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "{{ site.author }}",
+  "url": "{{ site.url }}",
+  "description": "{{ site.description }}",
+  "jobTitle": "AI & Digital Transformation Consultant"
+}
+</script>
+{% endif %}

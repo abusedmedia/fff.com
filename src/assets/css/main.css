@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .anchor-link {
+    @apply ml-2 text-gray-500 hover:text-red-600 no-underline;
+  }
+
+  /* Custom Prism.js styling */
+  .prose pre[class*="language-"] {
+    @apply bg-gray-900 border-2 border-red-600 rounded-lg p-6 text-sm overflow-x-auto;
+  }
+
+  .prose code[class*="language-"] {
+    @apply text-gray-300;
+  }
+
+  /* Override Prism.js theme colors to match our design */
+  .token.comment,
+  .token.prolog,
+  .token.doctype,
+  .token.cdata {
+    @apply text-gray-500;
+  }
+
+  .token.punctuation {
+    @apply text-gray-400;
+  }
+
+  .token.property,
+  .token.tag,
+  .token.boolean,
+  .token.number,
+  .token.constant,
+  .token.symbol,
+  .token.deleted {
+    @apply text-red-400;
+  }
+
+  .token.selector,
+  .token.attr-name,
+  .token.string,
+  .token.char,
+  .token.builtin,
+  .token.inserted {
+    @apply text-green-400;
+  }
+
+  .token.operator,
+  .token.entity,
+  .token.url,
+  .language-css .token.string,
+  .style .token.string {
+    @apply text-yellow-400;
+  }
+
+  .token.atrule,
+  .token.attr-value,
+  .token.keyword {
+    @apply text-blue-400;
+  }
+
+  .token.function,
+  .token.class-name {
+    @apply text-purple-400;
+  }
+
+  .token.regex,
+  .token.important,
+  .token.variable {
+    @apply text-orange-400;
+  }
+}
