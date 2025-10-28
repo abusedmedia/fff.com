@@ -13,13 +13,13 @@ description: Guiding companies through the AI revolution with hands-on expertise
     </div>
 
     <h1 class="text-6xl md:text-8xl font-black leading-none mb-8 tracking-tight">
-      I help you <span class="text-red-600">make <br />sense</span> of AI.
+      Let's <span class="text-red-600">make <br />sense</span> of it.
       {# You're stuck <span class="italic">deciding</span>.<br/>
       They're already <span class="text-red-600">automating</span>. #}
     </h1>
 
     <h3 class="text-4xl md:text-5xl font-black leading-none mb-8 tracking-tight">
-      I make mistakes with AI on purpose, <br />so you don't have to. 😉
+      I make mistakes with AI, on purpose, <br />so you don't have to. 😉
       </h3>
 
     <p class="text-2xl md:text-3xl text-gray-400 mb-12 max-w-3xl leading-relaxed">
@@ -62,6 +62,29 @@ description: Guiding companies through the AI revolution with hands-on expertise
         <div class="text-red-600 font-black text-6xl mb-4">03</div>
         <h3 class="text-2xl font-bold mb-4">Falling behind</h3>
         <p class="text-gray-400 text-lg">Your competitors are innovating. You're still using Excel spreadsheets from 2015.</p>
+      </div>
+    </div>
+  </div>
+
+
+  {# Solution Section #}
+  <div class="mb-32 border-t-4 border-red-600 pt-20">
+    <h2 class="text-5xl font-black mb-12 uppercase">The solution:</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div>
+        <div class="text-red-600 font-black text-6xl mb-4">01</div>
+        <h3 class="text-2xl font-bold mb-4">External perspective</h3>
+        <p class="text-gray-400 text-lg">A fresh, unbiased viewpoint to see decisions from a new angle and prioritize with clarity.</p>
+      </div>
+      <div>
+        <div class="text-red-600 font-black text-6xl mb-4">02</div>
+        <h3 class="text-2xl font-bold mb-4">Unified systems</h3>
+        <p class="text-gray-400 text-lg">Connect your tools, centralize data, and automate workflows so everything works together.</p>
+      </div>
+      <div>
+        <div class="text-red-600 font-black text-6xl mb-4">03</div>
+        <h3 class="text-2xl font-bold mb-4">Get ahead fast</h3>
+        <p class="text-gray-400 text-lg">Ship quick wins, validate with prototypes, and execute a roadmap that keeps you ahead.</p>
       </div>
     </div>
   </div>
@@ -204,7 +227,7 @@ description: Guiding companies through the AI revolution with hands-on expertise
             <p class="text-lg">Dedicated Basecamp project for communication and file sharing</p>
           </div>
           <div class="flex gap-2 md:gap-3 items-start">
-            <p class="text-lg"><a href="/services/" class="text-red-600 hover:underline">Click here to see how it works</a></p>
+            <p class="text-lg"><a href="/services/" class="text-red-600 hover:underline">See how it works</a></p>
           </div>
           
           
@@ -212,7 +235,7 @@ description: Guiding companies through the AI revolution with hands-on expertise
 
 
         <div>
-          <div class="flex items-start gap-2 md:gap-3 mb-3 md:mb-4">
+          <div class="flex items-start gap-2 md:gap-3 mb-2 md:mb-4">
             <input
               type="checkbox"
               id="advisory-tos-checkbox"
@@ -245,7 +268,7 @@ description: Guiding companies through the AI revolution with hands-on expertise
           <h3 class="text-3xl font-black uppercase">Partnership</h3>
         </div>
 
-        <div class="text-5xl font-black mb-2">€4.000<span class="text-2xl">/mo</span></div>
+        <div class="text-5xl font-black mb-2">€?.000<span class="text-2xl">/mo</span></div>
         <p class="text-xl text-gray-400 mb-6 md:mb-8">Strategic + operational execution</p>
 
         <div class="mb-6 md:mb-8 pb-6 md:pb-8 border-b border-gray-700">
@@ -293,7 +316,7 @@ description: Guiding companies through the AI revolution with hands-on expertise
             onclick="openPartnershipModal()"
             class="block w-full px-6 md:px-8 py-3 md:py-4 bg-red-600 hover:bg-red-700 text-white font-bold text-lg md:text-xl uppercase tracking-wide transition-all duration-200 text-center"
           >
-            I’m intrigued...
+            I’m interested...
           </button>
           <p class="text-xs text-gray-500 text-center mt-2">This tier will be available soon</p>
         </div>
@@ -346,6 +369,83 @@ I highly value both your time and mine.
       </div>
       
       <div class="mb-4 md:mb-6">
+        <label class="block text-sm font-bold mb-3">What is a fair price?</label>
+        <div class="flex items-center gap-3">
+          <div class="flex gap-2 flex-1">
+            <button
+              type="button"
+              onclick="selectPrice(this, 1)"
+              class="price-btn flex-1 aspect-square border-2 border-gray-300 hover:border-red-600 text-black font-bold text-lg transition-all duration-200"
+            >
+              1
+            </button>
+            <button
+              type="button"
+              onclick="selectPrice(this, 2)"
+              class="price-btn flex-1 aspect-square border-2 border-gray-300 hover:border-red-600 text-black font-bold text-lg transition-all duration-200"
+            >
+              2
+            </button>
+            <button
+              type="button"
+              onclick="selectPrice(this, 3)"
+              class="price-btn flex-1 aspect-square border-2 border-gray-300 hover:border-red-600 text-black font-bold text-lg transition-all duration-200"
+            >
+              3
+            </button>
+            <button
+              type="button"
+              onclick="selectPrice(this, 4)"
+              class="price-btn flex-1 aspect-square border-2 border-gray-300 hover:border-red-600 text-black font-bold text-lg transition-all duration-200"
+            >
+              4
+            </button>
+            <button
+              type="button"
+              onclick="selectPrice(this, 5)"
+              class="price-btn flex-1 aspect-square border-2 border-gray-300 hover:border-red-600 text-black font-bold text-lg transition-all duration-200"
+            >
+              5
+            </button>
+            <button
+              type="button"
+              onclick="selectPrice(this, 6)"
+              class="price-btn flex-1 aspect-square border-2 border-gray-300 hover:border-red-600 text-black font-bold text-lg transition-all duration-200"
+            >
+              6
+            </button>
+            <button
+              type="button"
+              onclick="selectPrice(this, 7)"
+              class="price-btn flex-1 aspect-square border-2 border-gray-300 hover:border-red-600 text-black font-bold text-lg transition-all duration-200"
+            >
+              7
+            </button>
+            <button
+              type="button"
+              onclick="selectPrice(this, 8)"
+              class="price-btn flex-1 aspect-square border-2 border-gray-300 hover:border-red-600 text-black font-bold text-lg transition-all duration-200"
+            >
+              8
+            </button>
+            <button
+              type="button"
+              onclick="selectPrice(this, 9)"
+              class="price-btn flex-1 aspect-square border-2 border-gray-300 hover:border-red-600 text-black font-bold text-lg transition-all duration-200"
+            >
+              9
+            </button>
+          </div>
+          <div class="text-2xl font-bold text-gray-700">k€</div>
+        </div>
+        <input
+          type="hidden"
+          id="partnership-price"
+          name="price"
+        >
+      </div>
+      
+      <div class="mb-4 md:mb-6">
         
         <textarea
           id="partnership-comment"
@@ -380,22 +480,50 @@ function closePartnershipModal() {
   document.getElementById('partnership-modal').style.display = 'none';
   document.body.style.overflow = 'auto';
   document.getElementById('partnership-form').reset();
+  // Reset price buttons
+  document.querySelectorAll('.price-btn').forEach(btn => {
+    btn.classList.remove('bg-red-600', 'text-white', 'border-red-600');
+    btn.classList.add('border-gray-300', 'text-black');
+  });
+}
+
+function selectPrice(button, value) {
+  // Remove selection from all buttons
+  document.querySelectorAll('.price-btn').forEach(btn => {
+    btn.classList.remove('bg-red-600', 'text-white', 'border-red-600');
+    btn.classList.add('border-gray-300', 'text-black');
+  });
+  
+  // Add selection to clicked button
+  button.classList.remove('border-gray-300', 'text-black');
+  button.classList.add('bg-red-600', 'text-white', 'border-red-600');
+  
+  // Set hidden input value (in thousands)
+  document.getElementById('partnership-price').value = value * 1000;
 }
 
 function submitPartnershipForm(event) {
   event.preventDefault();
   
   const email = document.getElementById('partnership-email').value;
+  const price = document.getElementById('partnership-price').value;
   const comment = document.getElementById('partnership-comment').value;
   const submitBtn = document.getElementById('partnership-submit-btn');
+  
+  // Validate that a price was selected
+  if (!price) {
+    alert('Please select a suggested price.');
+    return;
+  }
   
   // Disable button and show loading state
   submitBtn.disabled = true;
   submitBtn.textContent = 'Sending...';
   
   // TODO: Add your service call here
-  // You now have access to both email and comment values
+  // You now have access to email, price, and comment values
   console.log('Email:', email);
+  console.log('Suggested Price:', price, '€/month');
   console.log('Comment:', comment);
   
   // For now, we'll simulate a successful submission
@@ -405,7 +533,7 @@ function submitPartnershipForm(event) {
     
     // Reset button
     submitBtn.disabled = false;
-    submitBtn.textContent = 'Send Interest';
+    submitBtn.textContent = 'Send';
   }, 1500);
 }
 

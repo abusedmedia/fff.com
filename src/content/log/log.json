@@ -1,0 +1,6 @@
+{
+  "permalink": "/log/{{ page.fileSlug }}/index.html",
+  "layout": "layouts/post.njk"
+}
+
+

@@ -81,13 +81,22 @@ function processDirectory(dirPath) {
 
 // Main execution
 const blogDir = path.join(__dirname, '..', 'src', 'content', 'blog');
+const logDir = path.join(__dirname, '..', 'src', 'content', 'log');
 
-if (!fs.existsSync(blogDir)) {
+let total = 0;
+
+if (fs.existsSync(blogDir)) {
+  console.log('Normalizing dates in blog posts...');
+  total += processDirectory(blogDir);
+} else {
   console.log('Blog directory not found:', blogDir);
-  console.log('Skipping date normalization.');
-  process.exit(0);
 }
 
-console.log('Normalizing dates in blog posts...');
-const modifiedCount = processDirectory(blogDir);
-console.log(`Normalized dates in ${modifiedCount} files.`);
+if (fs.existsSync(logDir)) {
+  console.log('Normalizing dates in log posts...');
+  total += processDirectory(logDir);
+} else {
+  console.log('Log directory not found:', logDir);
+}
+
+console.log(`Normalized dates in ${total} files.`);

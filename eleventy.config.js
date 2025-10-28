@@ -50,16 +50,40 @@ export default function(eleventyConfig) {
 
   // Copy static assets (excluding CSS which is handled by Tailwind)
   eleventyConfig.addPassthroughCopy('src/assets/images');
-  //eleventyConfig.addPassthroughCopy('src/assets/blog');
+  eleventyConfig.addPassthroughCopy('src/assets/blog');
+  eleventyConfig.addPassthroughCopy('src/assets/log');
   eleventyConfig.addPassthroughCopy('src/public');
   eleventyConfig.ignores.add('src/assets/css/');
 
-  // Add collections
-  // eleventyConfig.addCollection('blog', function(collectionApi) {
-  //   return collectionApi.getFilteredByGlob('src/content/blog/*.md')
-  //     .filter(item => !item.data.draft)
-  //     .sort((a, b) => b.date - a.date);
-  // });
+  // Layout aliases
+  eleventyConfig.addLayoutAlias('page', 'layouts/page.njk');
+  eleventyConfig.addLayoutAlias('blog', 'layouts/post.njk');
+  eleventyConfig.addLayoutAlias('layouts/blog.njk', 'layouts/post.njk');
+
+  // Normalize front matter dates globally (accepts "YYYY-MM-DD HH:mm:ss +/-TZ")
+  eleventyConfig.addGlobalData('eleventyComputed', {
+    date: (data) => {
+      const raw = data.date;
+      if (typeof raw === 'string') {
+        const match = raw.match(/(\d{4}-\d{2}-\d{2})/);
+        if (match) return match[1];
+      }
+      return raw;
+    }
+  });
+
+  eleventyConfig.addCollection('blog', function(collectionApi) {
+    return collectionApi.getFilteredByGlob('src/content/blog/*.md')
+      .filter(item => !item.data.draft)
+      .sort((a, b) => b.date - a.date);
+  });
+
+  eleventyConfig.addCollection('log', function(collectionApi) {
+    return collectionApi.getFilteredByGlob('src/content/log/*.md')
+      .filter(item => !item.data.draft)
+      .sort((a, b) => b.date - a.date);
+  });
+  
 
   eleventyConfig.addCollection('projects', function(collectionApi) {
     return collectionApi.getFilteredByGlob('src/content/projects/*.md')
