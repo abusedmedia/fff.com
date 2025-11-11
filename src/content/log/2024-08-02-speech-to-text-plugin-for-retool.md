@@ -6,7 +6,6 @@ description: ""
 categories: Logs
 tags: [log]
 layout: "layouts/blog.njk"
-permalink: "/{{ page.filePathStem }}/"
 ---
 This is our first **public plugin** for Retool.
 

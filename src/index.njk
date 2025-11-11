@@ -9,11 +9,11 @@ description: Guiding companies through the AI revolution with hands-on expertise
   {# Hero Section #}
   <div class="mb-32">
     <div class="inline-block mb-8 px-4 py-2 bg-red-600 text-white font-bold text-sm uppercase tracking-wider">
-      Are you stuck with AI?
+      Are you overwhelmed by AI?
     </div>
 
     <h1 class="text-6xl md:text-8xl font-black leading-none mb-8 tracking-tight">
-      Let's <span class="text-red-600">make <br />sense</span> of it.
+      I help you <span class="text-red-600">make <br />sense</span> of it.
       {# You're stuck <span class="italic">deciding</span>.<br/>
       They're already <span class="text-red-600">automating</span>. #}
     </h1>
@@ -35,12 +35,12 @@ description: Guiding companies through the AI revolution with hands-on expertise
       >
         Start Now
       </a>
-      <a
+      {# <a
         href="#how-it-works"
         class="inline-block px-12 py-5 border-2 border-white hover:bg-white hover:text-black text-white font-bold text-xl uppercase tracking-wide transition-all duration-200 text-center"
       >
         How it works
-      </a>
+      </a> #}
     </div>
   </div>
 
@@ -227,7 +227,7 @@ description: Guiding companies through the AI revolution with hands-on expertise
             <p class="text-lg">Dedicated Basecamp project for communication and file sharing</p>
           </div>
           <div class="flex gap-2 md:gap-3 items-start">
-            <p class="text-lg"><a href="/services/" class="text-red-600 hover:underline">See how it works</a></p>
+            <p class="text-lg"><a href="#" onclick="openHowItWorksModal(); return false;" class="text-red-600 hover:underline cursor-pointer">See how it works</a></p>
           </div>
           
           
@@ -249,6 +249,7 @@ description: Guiding companies through the AI revolution with hands-on expertise
           <button
             id="advisory-subscribe-btn"
             disabled
+            onclick="if (!this.disabled) window.location.href='https://buy.stripe.com/dRm28q8ko4VG69Z00o8EM0c'"
             class="block w-full px-6 md:px-8 py-3 md:py-4 border-2 border-white hover:bg-white hover:text-black text-white font-bold text-lg md:text-xl uppercase tracking-wide transition-all duration-200 text-center opacity-50 cursor-not-allowed disabled:hover:bg-transparent disabled:hover:text-white"
           >
             Subscribe now
@@ -292,9 +293,9 @@ description: Guiding companies through the AI revolution with hands-on expertise
             </div>
           </div>
 
-          <div class="flex gap-2 md:gap-3 items-start">
+          {# <div class="flex gap-2 md:gap-3 items-start">
             <p class="text-lg"><a href="/services/" class="text-red-600 hover:underline">Click here to see how it works</a></p>
-          </div>
+          </div> #}
 
           
         </div>
@@ -339,6 +340,46 @@ I highly value both your time and mine.
     </a>
   </div>
 
+</div>
+
+{# How It Works Modal #}
+<div id="how-it-works-modal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4" style="display: none;">
+  <div class="bg-white text-black p-8 md:p-8 max-w-md w-full mx-4 rounded-lg max-h-[90vh] overflow-y-auto">
+    <div class="flex justify-between items-center mb-6 md:mb-8">
+      <h3 class="text-2xl md:text-3xl font-black uppercase">Advisory plan</h3>
+      <button onclick="closeHowItWorksModal()" class="text-gray-500 hover:text-black text-2xl md:text-3xl font-bold">
+        ×
+      </button>
+    </div>
+    
+    <div class="text-base md:text-lg text-gray-700 mb-6 md:mb-8 leading-relaxed">
+      
+      
+      <ul class="space-y-3 md:space-y-4">
+        <li class="flex gap-3 md:gap-4 items-start">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-red-600 flex-shrink-0 mt-1 md:w-6 md:h-6"><polyline points="20 6 9 17 4 12"/></svg>
+          <p>Value is delivered exclusively through remote calls</p>
+        </li>
+        <li class="flex gap-3 md:gap-4 items-start">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-red-600 flex-shrink-0 mt-1 md:w-6 md:h-6"><polyline points="20 6 9 17 4 12"/></svg>
+          <p>You can book calls as you need, but one per time, using a provided availability calendar</p>
+        </li>
+        
+        <li class="flex gap-3 md:gap-4 items-start">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-red-600 flex-shrink-0 mt-1 md:w-6 md:h-6"><polyline points="20 6 9 17 4 12"/></svg>
+          <p>Calls duration is up to 1 hour</p>
+        </li>
+        <li class="flex gap-3 md:gap-4 items-start">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-red-600 flex-shrink-0 mt-1 md:w-6 md:h-6"><polyline points="20 6 9 17 4 12"/></svg>
+          <p>Basecamp for async message/document exchanges, as solely to support the call</p>
+        </li>
+      </ul>
+      
+      <p class="mt-8 text-base md:text-lg text-gray-700">
+        For more details, please <a href="/privacy-tos/" class="text-red-600 hover:underline">read the Terms of Service</a> or <a href="https://calendly.com/fabiofranchino/chat" class="text-red-600 hover:underline" target="_blank">book a quick chat</a> to know each other.
+      </p>
+    </div>
+  </div>
 </div>
 
 {# Partnership Modal #}
@@ -452,7 +493,7 @@ I highly value both your time and mine.
           name="comment"
           rows="3"
           class="w-full px-3 md:px-4 py-2 md:py-3 border-2 border-gray-300 focus:border-red-600 focus:outline-none text-black resize-vertical text-sm md:text-base"
-          placeholder="Optional details you want to share..."
+          placeholder="Why are you interested?"
         ></textarea>
       </div>
       
@@ -471,6 +512,16 @@ I highly value both your time and mine.
 </div>
 
 <script>
+function openHowItWorksModal() {
+  document.getElementById('how-it-works-modal').style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+}
+
+function closeHowItWorksModal() {
+  document.getElementById('how-it-works-modal').style.display = 'none';
+  document.body.style.overflow = 'auto';
+}
+
 function openPartnershipModal() {
   document.getElementById('partnership-modal').style.display = 'flex';
   document.body.style.overflow = 'hidden';
@@ -547,7 +598,22 @@ document.getElementById('partnership-modal').addEventListener('click', function(
 // Close modal with Escape key
 document.addEventListener('keydown', function(e) {
   if (e.key === 'Escape') {
-    closePartnershipModal();
+    const howItWorksModal = document.getElementById('how-it-works-modal');
+    const partnershipModal = document.getElementById('partnership-modal');
+    
+    if (howItWorksModal && howItWorksModal.style.display === 'flex') {
+      closeHowItWorksModal();
+    }
+    if (partnershipModal && partnershipModal.style.display === 'flex') {
+      closePartnershipModal();
+    }
+  }
+});
+
+// Close how-it-works modal when clicking outside
+document.getElementById('how-it-works-modal').addEventListener('click', function(e) {
+  if (e.target === this) {
+    closeHowItWorksModal();
   }
 });
 </script>

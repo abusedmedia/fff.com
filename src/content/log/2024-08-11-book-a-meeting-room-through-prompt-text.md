@@ -6,7 +6,6 @@ description: ""
 categories: Logs
 tags: [log]
 layout: "layouts/blog.njk"
-permalink: "/{{ page.filePathStem }}/"
 ---
 Experimenting with GPT-4 and Retool opens up lot of possibilities at the intersection of user interface design and prompt-based commands. This exploration is not just about leveraging the advanced capabilities of GPT-4 but also about how it can be seamlessly integrated into Retool's versatile platform to enhance user experience and operational efficiency.
 

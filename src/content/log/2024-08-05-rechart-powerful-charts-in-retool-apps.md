@@ -6,7 +6,6 @@ description: ""
 categories: Logs
 tags: [log]
 layout: "layouts/blog.njk"
-permalink: "/{{ page.filePathStem }}/"
 ---
 **Rechart** is our main ongoing project to contribute to Retool platform.
 

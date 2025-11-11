@@ -6,7 +6,6 @@ description: "This is a Retool app that generates a list of brand names from a c
 categories: Logs
 tags: [log]
 layout: "layouts/blog.njk"
-permalink: "/{{ page.filePathStem }}/"
 ---
 ![undefined](https://cdn.cmsfly.com/64e6fad6d38a6d002002f842/brand-name-generator-and-domain-checker-iSSfYY.gif)
 

@@ -6,7 +6,6 @@ description: ""
 categories: Logs
 tags: [log]
 layout: "layouts/blog.njk"
-permalink: "/{{ page.filePathStem }}/"
 ---
 While studying the concept **Planning** of AI Agents, we developed a prototype with Retool.
 

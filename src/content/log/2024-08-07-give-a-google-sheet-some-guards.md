@@ -6,7 +6,6 @@ description: ""
 categories: Logs
 tags: [log]
 layout: "layouts/blog.njk"
-permalink: "/{{ page.filePathStem }}/"
 ---
 Google Sheets is ubiquitous, and for very good reasons.
 

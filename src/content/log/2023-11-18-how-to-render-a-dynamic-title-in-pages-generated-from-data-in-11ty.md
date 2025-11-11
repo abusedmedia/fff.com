@@ -25,3 +25,5 @@ eleventyComputed:
 </h1>
 ```
 
+Note: The `permalink: "posts/{{ post.slug }}/"` in the example above is specific to that use case. For regular log posts, the permalink is automatically set by `log.json`.
+

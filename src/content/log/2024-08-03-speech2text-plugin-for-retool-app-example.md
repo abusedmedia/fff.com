@@ -6,7 +6,6 @@ description: ""
 categories: Logs
 tags: [log]
 layout: "layouts/blog.njk"
-permalink: "/{{ page.filePathStem }}/"
 ---
 [We made a Retool plugin](https://eloquentops.com/post/Speech-to-Text-Plugin-for-Retool) to include in any Retool application the Speech2Text capability that is built in Google Chrome.
 

@@ -6,7 +6,6 @@ description: ""
 categories: Logs
 tags: [log]
 layout: "layouts/blog.njk"
-permalink: "/{{ page.filePathStem }}/"
 ---
 One of the advantages of Retool is its ability to integrate external JavaScript libraries and utilize them within the application. In a recent Retool project, we needed to generate a PowerPoint presentation file using the data present in the app, allowing users to download the PPT file simply by clicking a button. Adding such functionality in Retool is relatively straightforward.
 

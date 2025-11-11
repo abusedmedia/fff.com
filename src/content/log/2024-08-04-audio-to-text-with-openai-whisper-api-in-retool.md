@@ -6,7 +6,6 @@ description: ""
 categories: Logs
 tags: [log]
 layout: "layouts/blog.njk"
-permalink: "/{{ page.filePathStem }}/"
 ---
 > **UPDATE**: we wrote a tutorial about how to create such integration on Retool. 
 > You can read it  [here](/blog/how-to-use-openai-whisper-api-in-retool/).
