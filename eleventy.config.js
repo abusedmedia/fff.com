@@ -7,6 +7,18 @@ export default function(eleventyConfig) {
   // Add plugins
   eleventyConfig.addPlugin(pluginRss);
 
+  const baseSlugify = eleventyConfig.getFilter?.('slugify');
+  if (baseSlugify) {
+    eleventyConfig.addFilter('safeSlug', (value) => {
+      if (!value) return value;
+      return baseSlugify(value, {
+        lower: true,
+        strict: true,
+        replacement: '-'
+      });
+    });
+  }
+
   // Configure Markdown
   const mdOptions = {
     html: true,
