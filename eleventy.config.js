@@ -65,6 +65,10 @@ export default function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/assets/blog');
   eleventyConfig.addPassthroughCopy('src/assets/log');
   eleventyConfig.addPassthroughCopy('src/public');
+  // Copy Google verification file to build root
+  eleventyConfig.addPassthroughCopy({
+    'src/public/googleda65528935c443aa.html': 'googleda65528935c443aa.html'
+  });
   eleventyConfig.ignores.add('src/assets/css/');
 
   // Layout aliases
