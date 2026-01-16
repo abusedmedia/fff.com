@@ -1,4 +1,4 @@
-import { Zap, TrendingUp, Cog, MessageSquare, Rocket, Check } from 'lucide-react';
+import { Zap, TrendingUp, Cog, MessageSquare, Rocket, Check, GraduationCap } from 'lucide-react';
 
 function App() {
   return (
@@ -157,10 +157,10 @@ function App() {
         <div id="pricing" className="mb-32 border-t-4 border-red-600 pt-20">
           <h2 className="text-5xl font-black mb-12 uppercase text-center">Choose your tier</h2>
           <p className="text-2xl text-gray-400 text-center mb-16 max-w-3xl mx-auto">
-            Two engagement models designed for different stages and needs. Both include direct access to me.
+            Three engagement models designed for different stages and needs. Both include direct access to me.
           </p>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
             {/* Advisory Tier */}
             <div className="border-4 border-white p-12 hover:border-red-600 transition-all duration-300">
               <div className="flex items-center gap-4 mb-6">
@@ -266,6 +266,59 @@ function App() {
                   Subscribe now
                 </a>
                 <p className="text-xs text-gray-500 text-center mt-2">You'll be redirected to Stripe checkout</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Training Tier - Different styling */}
+          <div className="w-full">
+            <div className="border-4 border-red-600 bg-red-600/10 p-12">
+              <div className="grid md:grid-cols-2 gap-8 md:gap-12">
+                {/* Left Column */}
+                <div>
+                  <div className="flex items-center gap-4 mb-6">
+                    <GraduationCap className="w-12 h-12 text-red-600" />
+                    <h3 className="text-4xl font-black uppercase">Training</h3>
+                  </div>
+
+                  <p className="text-2xl text-gray-300 mb-6">Hands-on learning package</p>
+                  
+                  <div className="mb-6">
+                    <div className="text-6xl font-black mb-2">€2,000</div>
+                    <p className="text-xl font-black text-gray-300">One-off payment</p>
+                  </div>
+                </div>
+
+                {/* Right Column */}
+                <div>
+                  <div className="mb-8 pb-8 border-b border-red-600/30">
+                    <p className="text-lg text-gray-300 mb-4">Perfect for:</p>
+                    <p className="text-gray-400 text-lg">Teams who want to learn by doing with personalized guidance</p>
+                  </div>
+
+                  <p className="text-lg font-bold mb-6 uppercase tracking-wide">What's included</p>
+
+                  <div className="space-y-4">
+                    <div className="flex gap-3 items-start">
+                      <Check className="w-6 h-6 text-red-600 flex-shrink-0 mt-1" />
+                      <p className="text-lg">Personalized training plan tailored to your needs</p>
+                    </div>
+                    <div className="flex gap-3 items-start">
+                      <Check className="w-6 h-6 text-red-600 flex-shrink-0 mt-1" />
+                      <p className="text-lg">Full day session leading hands-on training activities</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-8">
+                <a
+                  href="#"
+                  className="block w-full px-8 py-4 border-2 border-red-600 hover:bg-red-600 text-white font-bold text-xl uppercase tracking-wide transition-all duration-200 text-center"
+                >
+                  Book now
+                </a>
+                <p className="text-xs text-gray-500 text-center mt-2">One-off payment</p>
               </div>
             </div>
           </div>
