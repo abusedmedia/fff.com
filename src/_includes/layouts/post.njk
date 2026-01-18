@@ -18,11 +18,17 @@ layout: layouts/base.njk
 
     <h1 class="text-5xl md:text-6xl font-black mb-6 leading-tight">{{ title }}</h1>
 
+    {% if date %}
     <div class="flex items-center gap-6 text-gray-400 text-lg">
       <time datetime="{{ date | htmlDateString }}">{{ date | readableDate }}</time>
       <span>•</span>
       <span>{{ content | readingTime }} min read</span>
     </div>
+    {% elif content %}
+    <div class="flex items-center gap-6 text-gray-400 text-lg">
+      <span>{{ content | readingTime }} min read</span>
+    </div>
+    {% endif %}
 
     {% if excerpt %}
     <p class="text-2xl text-gray-300 mt-8 leading-relaxed">{{ excerpt }}</p>

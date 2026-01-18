@@ -76,17 +76,8 @@ export default function(eleventyConfig) {
   eleventyConfig.addLayoutAlias('blog', 'layouts/post.njk');
   eleventyConfig.addLayoutAlias('layouts/blog.njk', 'layouts/post.njk');
 
-  // Normalize front matter dates globally (accepts "YYYY-MM-DD HH:mm:ss +/-TZ")
-  eleventyConfig.addGlobalData('eleventyComputed', {
-    date: (data) => {
-      const raw = data.date;
-      if (typeof raw === 'string') {
-        const match = raw.match(/(\d{4}-\d{2}-\d{2})/);
-        if (match) return match[1];
-      }
-      return raw;
-    }
-  });
+  // Note: eleventyComputed is now handled in src/_data/eleventyComputed.js
+  // This includes date normalization and permalink computation for content files
 
   eleventyConfig.addCollection('blog', function(collectionApi) {
     return collectionApi.getFilteredByGlob('src/content/blog/*.md')
@@ -116,7 +107,10 @@ export default function(eleventyConfig) {
 
   // Add filters
   eleventyConfig.addFilter('readableDate', (dateObj) => {
-    return new Date(dateObj).toLocaleDateString('en-US', {
+    if (!dateObj) return '';
+    const date = new Date(dateObj);
+    if (isNaN(date.getTime())) return '';
+    return date.toLocaleDateString('en-US', {
       year: 'numeric',
       month: 'long',
       day: 'numeric'
@@ -124,7 +118,10 @@ export default function(eleventyConfig) {
   });
 
   eleventyConfig.addFilter('htmlDateString', (dateObj) => {
-    return new Date(dateObj).toISOString().split('T')[0];
+    if (!dateObj) return '';
+    const date = new Date(dateObj);
+    if (isNaN(date.getTime())) return '';
+    return date.toISOString().split('T')[0];
   });
 
   eleventyConfig.addFilter('readingTime', (text) => {
@@ -135,6 +132,14 @@ export default function(eleventyConfig) {
 
   eleventyConfig.addFilter('limit', (array, limit) => {
     return array.slice(0, limit);
+  });
+
+  eleventyConfig.addFilter('stripContentPrefix', (path) => {
+    if (typeof path === 'string') {
+      // Remove 'content/' prefix if present
+      return path.replace(/^content\//, '').replace(/^\/content\//, '');
+    }
+    return path || '';
   });
 
   // Don't watch CSS as it's handled by Tailwind separately
