@@ -8,7 +8,7 @@ layout: layouts/base.njk
       {% if tags %}
       <div class="flex gap-2 mb-4">
         {% for tag in tags %}
-        <a href="/tags/{{ tag | slugify }}/" class="px-3 py-1 bg-red-600 text-white text-sm font-bold uppercase hover:bg-red-700 transition-colors">
+        <a href="/tags/{{ tag | slugify }}/" class="px-3 py-1 bg-cyan-500 text-white text-sm font-bold uppercase hover:bg-cyan-600 transition-colors">
           {{ tag }}
         </a>
         {% endfor %}
@@ -40,17 +40,17 @@ layout: layouts/base.njk
               prose-h2:text-4xl prose-h2:mt-12 prose-h2:mb-6
               prose-h3:text-3xl prose-h3:mt-8 prose-h3:mb-4
               prose-p:text-gray-300 prose-p:leading-relaxed
-              prose-a:text-red-600 prose-a:font-bold prose-a:no-underline hover:prose-a:underline
+              prose-a:text-cyan-400 prose-a:font-bold prose-a:no-underline hover:prose-a:underline
               prose-strong:text-white prose-strong:font-bold
               prose-ul:text-gray-300 prose-ol:text-gray-300
-              prose-code:text-red-600 prose-code:bg-gray-900 prose-code:px-2 prose-code:py-1
-              prose-pre:bg-gray-900 prose-pre:border-2 prose-pre:border-red-600 prose-pre:overflow-x-auto
+              prose-code:text-cyan-400 prose-code:bg-gray-900 prose-code:px-2 prose-code:py-1
+              prose-pre:bg-gray-900 prose-pre:border-2 prose-pre:border-cyan-500/30 prose-pre:overflow-x-auto
               prose-pre:rounded-lg prose-pre:p-6 prose-pre:text-sm
-              prose-blockquote:border-l-4 prose-blockquote:border-red-600 prose-blockquote:text-gray-300">
+              prose-blockquote:border-l-4 prose-blockquote:border-cyan-500/30 prose-blockquote:text-gray-300">
     {{ content | safe }}
   </div>
 
-  <footer class="mt-16 pt-12 border-t-4 border-red-600">
+  <footer class="mt-16 pt-12 border-t border-gray-800/60">
     <div class="flex justify-between items-center">
       {% if collections.blog %}
         {% set previousPost = collections.blog | getPreviousCollectionItem %}
@@ -58,7 +58,7 @@ layout: layouts/base.njk
 
         <div>
           {% if previousPost %}
-          <a href="{{ previousPost.url }}" class="text-lg font-bold hover:text-red-600 transition-colors">
+          <a href="{{ previousPost.url }}" class="text-lg font-bold hover:text-cyan-400 transition-colors">
             ← {{ previousPost.data.title }}
           </a>
           {% endif %}
@@ -66,7 +66,7 @@ layout: layouts/base.njk
 
         <div class="text-right">
           {% if nextPost %}
-          <a href="{{ nextPost.url }}" class="text-lg font-bold hover:text-red-600 transition-colors">
+          <a href="{{ nextPost.url }}" class="text-lg font-bold hover:text-cyan-400 transition-colors">
             {{ nextPost.data.title }} →
           </a>
           {% endif %}

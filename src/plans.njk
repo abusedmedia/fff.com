@@ -2,121 +2,99 @@
 layout: layouts/base.njk
 title: AI & Digital Transformation Consultant
 description: Guiding companies through the AI revolution with hands-on expertise in Retool development and digital transformation
-projects:
-  - problem: 
-    solution: 
-    paragraph: A few sentences describing the project, the problem it solves, and the outcome. You can go into a bit of detail here.
-    tech: [Retool, OpenAI, Supabase, Node.js]
-    media:
-      type: image
-      src: /img/placeholder.svg
-      alt: Project One screenshot
-  - problem: 
-    solution: 
-    paragraph: Another project description. Replace with real copy and real media paths when you have them.
-    tech: [Python, FastAPI, PostgreSQL, React]
-    media:
-      type: video
-      src: /video/demo.mp4
-      poster: /img/poster.jpg
-      alt: Project Two demo
 ---
 
 <div class="max-w-6xl mx-auto px-6 py-20">
 
   {# Hero Section #}
-  <div class="mb-32 flex flex-col md:flex-row md:items-start md:gap-16">
-    <div class="flex-1">
-      <div class="inline-block mb-8 px-4 py-2 accent-badge font-bold text-sm uppercase tracking-wider">
-        Tech(AI) Consultant and Trainer
-      </div>
-
-      <h1 class="text-6xl md:text-8xl font-black leading-none mb-8 tracking-tight">
-        I help you <span class="text-gradient">make sense</span> of AI.
-        {# You're stuck <span class="italic">deciding</span>.<br/>
-        They're already <span class="text-gradient">automating</span>. #}
-      </h1>
-
-      <h3 class="text-4xl md:text-5xl font-black leading-none mb-8 tracking-tight">
-        I make mistakes with Tech & AI, on purpose, so you don't have to. 😉
-      </h3>
-
-      <p class="text-2xl md:text-3xl text-gray-400 mb-12 max-w-3xl leading-relaxed">
-        While your competitors move, you're watching.
-        Enough uncertainty. Enough wasted time.
-        <span class="text-white font-bold"> I support you and your company through the AI noise to find the right signals</span>.
-      </p>
-    </div>
-
-    <div class="flex-shrink-0 mb-12 md:mb-0 relative">
-      <svg class="blob-shape absolute -inset-6 md:-inset-8 w-[calc(100%+3rem)] h-[calc(100%+3rem)] md:w-[calc(100%+4rem)] md:h-[calc(100%+4rem)]" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="100" cy="95" r="95" fill="url(#blob-gradient)"/>
-        <defs>
-          <linearGradient id="blob-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stop-color="#22d3ee"/>
-            <stop offset="100%" stop-color="#818cf8"/>
-          </linearGradient>
-        </defs>
-      </svg>
-      <img
-        src="/public/assets/fff.jpg"
-        alt="Fabio Franchino"
-        class="relative z-10 w-48 h-48 md:w-64 md:h-64 lg:w-72 lg:h-72 rounded-full object-cover border-2 border-white/10 shadow-lg shadow-cyan-500/10"
-        loading="eager"
-      >
-    </div>
-  </div>
-
-  {# My method #}
-  <div class="mb-32 border-t border-gray-800/60 pt-20">
-
+  <div class="mb-32">
     <div class="inline-block mb-8 px-4 py-2 accent-badge font-bold text-sm uppercase tracking-wider">
-     A simple Method & Process
+      Tech(AI) Consultant and Trainer
     </div>
 
     <h1 class="text-6xl md:text-8xl font-black leading-none mb-8 tracking-tight">
-      <span class="text-gradient">Listen</span> carefully. 
-      <span class="text-gradient">Think</span> deeply. 
-      <span class="text-gradient">Deliver</span> value. 
+      I help you <span class="text-gradient">make <br />sense</span> of AI.
+      {# You're stuck <span class="italic">deciding</span>.<br/>
+      They're already <span class="text-gradient">automating</span>. #}
     </h1>
 
     <h3 class="text-4xl md:text-5xl font-black leading-none mb-8 tracking-tight">
-      It's simple as that 😎
+      I make mistakes with Tech & AI, on purpose, <br />so you don't have to. 😉
       </h3>
 
+    <p class="text-2xl md:text-3xl text-gray-400 mb-12 max-w-3xl leading-relaxed">
+      While your competitors move, you're watching.
+      Enough uncertainty. Enough wasted time.
+      <span class="text-white font-bold"> I support you and your company through the AI noise to find the right signals</span>.
+    </p>
 
-  </div>
-
-  {# Retool Agency Partner #}
-  <div class="mb-32 border-t border-gray-800/60 pt-20">
-    <div class="inline-block mb-8 px-4 py-2 accent-badge font-bold text-sm uppercase tracking-wider">
-      Certified Official Retool Agency Partner
-    </div>
-    <div class="flex flex-col md:flex-row md:items-center gap-6 md:gap-8">
+    <div class="flex flex-col sm:flex-row gap-6">
       <a
-        href="https://community.retool.com/u/abusedmedia/activity"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="inline-flex items-center gap-4 group"
-        aria-label="View Retool community profile (opens in new tab)"
+        href="#services"
+        class="inline-block px-12 py-5 bg-cyan-500 hover:bg-cyan-600 text-white font-bold text-xl uppercase tracking-wide transition-all duration-200 text-center"
       >
-        <img width="150"
-          src="/public/assets/retool-agency-partner-badge.png"
-          alt="Retool Agency Partner badge"
-          class="h-20 md:h-24 w-auto object-contain group-hover:opacity-90 transition-opacity"
-          loading="lazy"
-        >
-        <span class="text-xl md:text-2xl text-gray-300 group-hover:text-white transition-colors">
-          View my Retool community profile →
-        </span>
+        Start Now
       </a>
+      {# <a
+        href="#how-it-works"
+        class="inline-block px-12 py-5 border-2 border-white hover:bg-white hover:text-black text-white font-bold text-xl uppercase tracking-wide transition-all duration-200 text-center"
+      >
+        How it works
+      </a> #}
     </div>
   </div>
 
-  {# Who I am #}
+  {# Problem Section #}
+  <div class="mb-32 border-t border-gray-800/60 pt-20">
+    <h2 class="text-5xl font-black mb-12 uppercase">The problem:</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div>
+        <div class="text-cyan-400 font-black text-6xl mb-4">01</div>
+        <h3 class="text-2xl font-bold mb-4">Decision paralysis</h3>
+        <p class="text-gray-400 text-lg">You don't know where to start with AI. Too many tools, too much complexity, zero clarity.</p>
+      </div>
+      <div>
+        <div class="text-cyan-400 font-black text-6xl mb-4">02</div>
+        <h3 class="text-2xl font-bold mb-4">Disconnected systems</h3>
+        <p class="text-gray-400 text-lg">Data scattered everywhere. Apps that don't talk to each other. No automation. Total chaos.</p>
+      </div>
+      <div>
+        <div class="text-cyan-400 font-black text-6xl mb-4">03</div>
+        <h3 class="text-2xl font-bold mb-4">Falling behind</h3>
+        <p class="text-gray-400 text-lg">Your competitors are innovating. You're still using Excel spreadsheets from 2015.</p>
+      </div>
+    </div>
+  </div>
+
+
+  {# Solution Section #}
+  <div class="mb-32 border-t border-gray-800/60 pt-20">
+    <h2 class="text-5xl font-black mb-12 uppercase">The solution:</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div>
+        <div class="text-cyan-400 font-black text-6xl mb-4">01</div>
+        <h3 class="text-2xl font-bold mb-4">External perspective</h3>
+        <p class="text-gray-400 text-lg">A fresh, unbiased viewpoint to see decisions from a new angle and prioritize with clarity.</p>
+      </div>
+      <div>
+        <div class="text-cyan-400 font-black text-6xl mb-4">02</div>
+        <h3 class="text-2xl font-bold mb-4">Unified systems</h3>
+        <p class="text-gray-400 text-lg">Connect your tools, centralize data, and automate workflows so everything works together.</p>
+      </div>
+      <div>
+        <div class="text-cyan-400 font-black text-6xl mb-4">03</div>
+        <h3 class="text-2xl font-bold mb-4">Get ahead fast</h3>
+        <p class="text-gray-400 text-lg">Ship quick wins, validate with prototypes, and execute a roadmap that keeps you ahead.</p>
+      </div>
+    </div>
+  </div>
+
+
+  {# About Section #}
   <div id="about" class="mb-32 border-t border-gray-800/60 pt-20">
     <h2 class="text-5xl font-black mb-12 uppercase">Who I am:</h2>
 
+    {# Four Cards Grid #}
     <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
       <div class="glass-card text-white p-8 text-center">
         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-auto mb-6 text-cyan-400"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
@@ -142,9 +120,41 @@ projects:
         <p class="text-gray-300">Active practitioner who teaches and builds real solutions.</p>
       </div>
     </div>
+
   </div>
 
-  {# Specialized in #}
+  {# You Get Section #}
+  <div class="mb-32 border-t border-gray-800/60 pt-20">
+    <h2 class="text-5xl font-black mb-12 uppercase">What I provide:</h2>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="glass-card text-white p-8 text-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-auto mb-6 text-cyan-400"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="19" y1="8" x2="19" y2="14"/><line x1="22" y1="11" x2="16" y2="11"/></svg>
+        <h3 class="text-2xl font-black mb-4">Personalized <br/>Guidance</h3>
+        <p class="text-gray-300">Tailored advice for your specific product, service, and business context.</p>
+      </div>
+
+      <div class="glass-card text-white p-8 text-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-auto mb-6 text-cyan-400"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        <h3 class="text-2xl font-black mb-4">Strategic <br/>Vision</h3>
+        <p class="text-gray-300">Long-term technical planning and anticipation of potential challenges before they arise.</p>
+      </div>
+
+      <div class="glass-card text-white p-8 text-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-auto mb-6 text-cyan-400"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        <h3 class="text-2xl font-black mb-4">Technical <br/>Direction</h3>
+        <p class="text-gray-300">Expert guidance on technology stack, tools, and implementation strategies.</p>
+      </div>
+
+      <div class="glass-card text-white p-8 text-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-auto mb-6 text-cyan-400"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        <h3 class="text-2xl font-black mb-4">Honest <br/>Perspective</h3>
+        <p class="text-gray-300">Straightforward, unbiased opinions and strong recommendations based on experience.</p>
+      </div>
+    </div>
+  </div>
+
+  {# Specialties Section #}
   <div class="mb-32 border-t border-gray-800/60 pt-20">
     <h2 class="text-5xl font-black mb-12 uppercase">Specialized in:</h2>
 
@@ -160,6 +170,7 @@ projects:
         <h3 class="text-2xl font-black mb-4">Team & Process optimization</h3>
         <p class="text-gray-300">Optimizing team dynamics through modern practices and agile methodologies.</p>
       </div>
+      
 
       <div class="glass-card text-white p-8 text-center">
         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-auto mb-6 text-cyan-400"><path d="M12 2v4"/><path d="m16.2 7.8 2.9-2.9"/><path d="M18 12h4"/><path d="m16.2 16.2 2.9 2.9"/><path d="M12 18v4"/><path d="m4.9 19.1 2.9-2.9"/><path d="M2 12h4"/><path d="m4.9 4.9 2.9 2.9"/></svg>
@@ -167,59 +178,231 @@ projects:
         <p class="text-gray-300">Software automation and cloud/low-code platform expertise.</p>
       </div>
 
+
       <div class="glass-card text-white p-8 text-center">
         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-auto mb-6 text-cyan-400"><circle cx="12" cy="12" r="2"/><path d="M12 2v4"/><path d="M12 18v4"/><path d="m4.93 4.93 2.83 2.83"/><path d="m16.24 16.24 2.83 2.83"/><path d="M2 12h4"/><path d="M18 12h4"/><path d="m4.93 19.07 2.83-2.83"/><path d="m16.24 7.76 2.83-2.83"/></svg>
         <h3 class="text-2xl font-black mb-4">Rapid Prototyping</h3>
         <p class="text-gray-300">Quick validation strategies and MVP development approaches.</p>
       </div>
+      
     </div>
   </div>
 
-  {# Projects Section #}
-  {# <div id="projects" class="mb-32 border-t border-gray-800/60 pt-20">
-    <div class="space-y-32">
-      {% for project in projects %}
-      <article class="project-widget glass-card p-0 overflow-hidden mb-16 rounded-lg">
-        <div class="grid md:grid-cols-2 gap-0">
-          <div class="p-8 md:p-10 order-2 md:order-1 flex flex-col justify-center">
-            <h3 class="text-2xl md:text-3xl font-black mb-2 uppercase">Problem:</h3>
-            <p class="text-xl text-gray-300 mb-4">{{ project.problem }}</p>
-            <h3 class="text-2xl md:text-3xl font-black mb-2 uppercase">Solution:</h3>
-            <p class="text-xl text-gray-300 mb-6">{{ project.solution }}</p>
-            <p class="text-gray-400 text-lg leading-relaxed mb-6">{{ project.paragraph }}</p>
-            <ul class="flex flex-wrap gap-2" aria-label="Technologies used">
-              {% for item in project.tech %}
-              <li>
-                <span class="inline-block px-3 py-1 bg-gray-800 text-gray-300 text-sm font-medium">{{ item }}</span>
-              </li>
-              {% endfor %}
-            </ul>
+  {# Services Section #}
+  <div class="mb-32 border-t border-gray-800/60 pt-20">
+    <h2 class="text-4xl md:text-5xl font-black mb-8 md:mb-12 uppercase text-center">Learn how I can help you</h2>
+    <p  id="services" class="text-xl md:text-2xl text-gray-400 text-center mb-12 md:mb-16 max-w-3xl mx-auto px-4">
+      Four engagement models designed for different stages and needs. <br class="hidden md:block">All include direct access to me.
+    </p>
+
+    <div class="grid md:grid-cols-2 gap-6 md:gap-8 mb-8 md:mb-12">
+      {# Advisory Tier #}
+      <div class="glass-card p-8 md:p-12 relative rounded-lg">
+        {# <div class="absolute -top-4 right-8 bg-cyan-500 px-6 py-2 text-sm font-black uppercase">
+          Most popular
+        </div> #}
+
+        <div class="flex items-center gap-3 md:gap-4 mb-4 md:mb-6">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-cyan-400 md:w-12 md:h-12"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          <h3 class="text-3xl font-black uppercase">Advisory</h3>
+        </div>
+        <p class="text-xl text-gray-400 mb-4">Strategic support</p>
+
+        <div class="text-5xl font-black mb-2">€1k<span class="text-2xl">/mo</span></div>
+        <div class="text-1xl font-black">12 months agreement, 50% off: €6k</div>
+        <div class="text-1xl font-black mb-6 md:mb-8">Try the first week for free!</div>
+
+
+        <div class="mb-6 md:mb-8 pb-6 md:pb-8 border-b border-gray-700">
+          <p class="text-lg text-gray-300 mb-3 md:mb-4">Perfect for:</p>
+          <p class="text-gray-400">SMBs to boost team efficiency and clarify business strategy</p>
+        </div>
+
+        <p class="text-lg font-bold mb-3 md:mb-4 uppercase tracking-wide">What's included</p>
+
+        <div class="space-y-3 md:space-y-4 mb-6 md:mb-8">
+          <div class="flex gap-2 md:gap-3 items-start">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-cyan-400 flex-shrink-0 mt-1 md:w-6 md:h-6"><polyline points="20 6 9 17 4 12"/></svg>
+            <p class="text-lg">On-demand strategy calls — talk when you need</p>
           </div>
-          <div class="relative aspect-video bg-gray-900 order-1 md:order-2">
-            {% if project.media.type == 'video' %}
-            <video
-              class="w-full h-full object-cover"
-              src="{{ project.media.src }}"
-              {% if project.media.poster %}poster="{{ project.media.poster }}"{% endif %}
-              controls
-              playsinline
-              preload="metadata"
-              aria-label="{{ project.media.alt }}"
-            ></video>
-            {% else %}
-            <img
-              src="{{ project.media.src }}"
-              alt="{{ project.media.alt }}"
-              class="w-full h-full object-cover"
-              loading="lazy"
+          <div class="flex gap-2 md:gap-3 items-start">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-cyan-400 flex-shrink-0 mt-1 md:w-6 md:h-6"><polyline points="20 6 9 17 4 12"/></svg>
+            <p class="text-lg">Dedicated Basecamp project for communication and file sharing</p>
+          </div>
+          
+          
+          {# <div class="flex gap-2 md:gap-3 items-start">
+            <p class="text-lg"><a href="#" onclick="openHowItWorksAdvisoryModal(); return false;" class="text-cyan-400 hover:underline cursor-pointer">See how it works</a></p>
+          </div> #}
+          
+          
+        </div>
+
+
+        <div>
+          <div class="flex items-start gap-2 md:gap-3 mb-2 md:mb-4">
+            {# <input
+              type="checkbox"
+              id="advisory-tos-checkbox"
+              class="mt-1 w-4 h-4 md:w-5 md:h-5 cursor-pointer"
+              onchange="document.getElementById('advisory-subscribe-btn').disabled = !this.checked; document.getElementById('advisory-subscribe-btn').classList.toggle('opacity-50', !this.checked); document.getElementById('advisory-subscribe-btn').classList.toggle('cursor-not-allowed', !this.checked);"
             >
-            {% endif %}
+            <label for="advisory-tos-checkbox" class="text-xs md:text-sm text-gray-300 cursor-pointer leading-tight">
+              I have read and agree to the <a href="/privacy-tos/" class="text-cyan-400 hover:underline" target="_blank">Privacy Policy & Terms of Service</a>
+            </label> #}
+          </div>
+          {# <button
+            id="advisory-subscribe-btn"
+            disabled
+            onclick="if (!this.disabled) window.location.href='https://buy.stripe.com/dRm28q8ko4VG69Z00o8EM0c'"
+            class="block w-full px-6 md:px-8 py-3 md:py-4 border-2 border-white hover:bg-white hover:text-black text-white font-bold text-lg md:text-xl uppercase tracking-wide transition-all duration-200 text-center opacity-50 cursor-not-allowed disabled:hover:bg-transparent disabled:hover:text-white"
+          >
+            Subscribe now
+          </button>
+          <p class="text-xs text-gray-500 text-center mt-2">You'll be redirected to Stripe checkout</p> #}
+        </div>
+      </div>
+
+      {# Partnership Tier #}
+      <div class="glass-card p-8 md:p-12 relative rounded-lg">
+        {# <div class="absolute -top-4 right-8 bg-cyan-500 px-6 py-2 text-sm font-black uppercase">
+          Most popular
+        </div> #}
+
+        <div class="flex items-center gap-3 md:gap-4 mb-4 md:mb-6">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-cyan-400 md:w-12 md:h-12"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>
+          <h3 class="text-3xl font-black uppercase">Partnership</h3>
+        </div>
+
+        <p class="text-xl text-gray-400  mb-4">Strategic + operational execution</p>
+        <div class="text-5xl font-black mb-2">€3k<span class="text-2xl">/mo</span></div>
+        <div class="text-1xl font-black">12 months agreement, 30% off: €25k</div>
+        <div class="text-1xl font-black mb-6 md:mb-8">Try the first week for free!</div>
+
+        <div class="mb-6 md:mb-8 pb-6 md:pb-8 border-b border-gray-700">
+          <p class="text-lg text-gray-300 mb-3 md:mb-4">Perfect for:</p>
+          <p class="text-gray-400">Startups and SMBs pushing on digitalization & AI</p>
+        </div>
+
+        <p class="text-lg font-bold mb-3 md:mb-4 uppercase tracking-wide">What's included</p>
+
+        <div class="space-y-3 md:space-y-4 mb-6 md:mb-8">
+          <div class="flex gap-2 md:gap-3 items-start">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-cyan-400 flex-shrink-0 mt-1 md:w-6 md:h-6"><polyline points="20 6 9 17 4 12"/></svg>
+            <p class="text-lg">Everything from the Advisory tier</p>
+          </div>
+          
+          <div class="flex gap-2 md:gap-3 items-start">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-cyan-400 flex-shrink-0 mt-1 md:w-6 md:h-6"><polyline points="20 6 9 17 4 12"/></svg>
+            <div class="text-lg">
+              <p class="mb-2">Design + development + delivery of working internal tools, automations and AI</p>
+              
+            </div>
+          </div>
+
+          {# <div class="flex gap-2 md:gap-3 items-start">
+            <p class="text-lg"><a href="#" onclick="openHowItWorksPartnershipModal(); return false;" class="text-cyan-400 hover:underline cursor-pointer">See how it works</a></p>
+          </div> #}
+
+          {# <div class="flex gap-2 md:gap-3 items-start">
+            <p class="text-lg"><a href="/services/" class="text-cyan-400 hover:underline">Click here to see how it works</a></p>
+          </div> #}
+
+          
+        </div>
+
+        <div>
+          {# <div class="flex items-start gap-3 mb-4">
+            <input
+              type="checkbox"
+              id="partnership-tos-checkbox"
+              class="mt-1 w-5 h-5 cursor-pointer"
+              onchange="document.getElementById('partnership-subscribe-btn').disabled = !this.checked; document.getElementById('partnership-subscribe-btn').classList.toggle('opacity-50', !this.checked); document.getElementById('partnership-subscribe-btn').classList.toggle('cursor-not-allowed', !this.checked);"
+            >
+            <label for="partnership-tos-checkbox" class="text-sm text-gray-300 cursor-pointer">
+              I have read and agree to the <a href="/privacy-tos/" class="text-cyan-400 hover:underline" target="_blank">Privacy Policy & Terms of Service</a>
+            </label>
+          </div> #}
+          {# <button
+            id="partnership-subscribe-btn"
+            onclick="openPartnershipModal()"
+            class="block w-full px-6 md:px-8 py-3 md:py-4 bg-cyan-500 hover:bg-cyan-600 text-white font-bold text-lg md:text-xl uppercase tracking-wide transition-all duration-200 text-center"
+          >
+            I’m interested...
+          </button>
+          <p class="text-xs text-gray-500 text-center mt-2">This tier will be available soon</p> #}
+        </div>
+      </div>
+
+      {# Training Tier #}
+      <div class="glass-card p-8 md:p-12 relative rounded-lg">
+        <div class="flex items-center gap-3 md:gap-4 mb-4 md:mb-6">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-cyan-400 md:w-12 md:h-12"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          <h3 class="text-3xl font-black uppercase">Training</h3>
+        </div>
+        <p class="text-xl text-gray-400 mb-4">Hands-on learning package</p>
+
+        <div class="text-5xl font-black mb-2">€2.5k</div>
+        <div class="text-1xl font-black mb-6 md:mb-8">One-off payment</div>
+
+        <div class="mb-6 md:mb-8 pb-6 md:pb-8 border-b border-gray-700">
+          <p class="text-lg text-gray-300 mb-3 md:mb-4">Perfect for:</p>
+          <p class="text-gray-400">Teams who want to learn by doing with personalized guidance</p>
+        </div>
+
+        <p class="text-lg font-bold mb-3 md:mb-4 uppercase tracking-wide">What's included</p>
+
+        <div class="space-y-3 md:space-y-4 mb-6 md:mb-8">
+          <div class="flex gap-2 md:gap-3 items-start">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-cyan-400 flex-shrink-0 mt-1 md:w-6 md:h-6"><polyline points="20 6 9 17 4 12"/></svg>
+            <p class="text-lg">Personalized training plan tailored to your needs</p>
+          </div>
+          <div class="flex gap-2 md:gap-3 items-start">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-cyan-400 flex-shrink-0 mt-1 md:w-6 md:h-6"><polyline points="20 6 9 17 4 12"/></svg>
+            <p class="text-lg">Full day session leading hands-on training activities</p>
           </div>
         </div>
-      </article>
-      {% endfor %}
+
+        <div>
+          {# Placeholder for future CTA button #}
+        </div>
+      </div>
+
+      {# Custom Projects Tier #}
+      <div class="glass-card p-8 md:p-12 relative rounded-lg">
+        <div class="flex items-center gap-3 md:gap-4 mb-4 md:mb-6">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-cyan-400 md:w-12 md:h-12"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+          <h3 class="text-3xl font-black uppercase">Custom</h3>
+        </div>
+        <p class="text-xl text-gray-400 mb-4">Tailored solutions</p>
+
+        <div class="text-5xl font-black mb-2">Custom</div>
+        <div class="text-1xl font-black mb-6 md:mb-8">Let's discuss</div>
+
+        <div class="mb-6 md:mb-8 pb-6 md:pb-8 border-b border-gray-700">
+          <p class="text-lg text-gray-300 mb-3 md:mb-4">Perfect for:</p>
+          <p class="text-gray-400">Unique projects that need a customized approach</p>
+        </div>
+
+        <p class="text-lg font-bold mb-3 md:mb-4 uppercase tracking-wide">What's included</p>
+
+        <div class="space-y-3 md:space-y-4 mb-6 md:mb-8">
+          <div class="flex gap-2 md:gap-3 items-start">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-cyan-400 flex-shrink-0 mt-1 md:w-6 md:h-6"><polyline points="20 6 9 17 4 12"/></svg>
+            <p class="text-lg">Bespoke engagement model designed for your specific needs</p>
+          </div>
+          <div class="flex gap-2 md:gap-3 items-start">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-cyan-400 flex-shrink-0 mt-1 md:w-6 md:h-6"><polyline points="20 6 9 17 4 12"/></svg>
+            <p class="text-lg">Flexible scope, timeline, and pricing structure</p>
+          </div>
+        </div>
+
+        <div>
+          {# Placeholder for future CTA button #}
+        </div>
+      </div>
     </div>
-  </div> #}
+  </div>
 
   {# CTA Section #}
   <div class="cta-gradient p-8 md:p-20 text-center rounded-lg">

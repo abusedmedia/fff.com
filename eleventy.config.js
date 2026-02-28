@@ -65,6 +65,8 @@ export default function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/assets/blog');
   eleventyConfig.addPassthroughCopy('src/assets/log');
   eleventyConfig.addPassthroughCopy('src/public');
+  // WebMCP widget script (index page) – explicit path so it’s always at /js/webmcp.js
+  eleventyConfig.addPassthroughCopy({ 'src/public/js/webmcp.js': 'js/webmcp.js' });
   // Copy Google verification file to build root
   eleventyConfig.addPassthroughCopy({
     'src/public/googleda65528935c443aa.html': 'googleda65528935c443aa.html'
