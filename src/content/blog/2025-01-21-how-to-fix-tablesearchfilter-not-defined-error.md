@@ -8,7 +8,7 @@ tags: [log]
 layout: "layouts/post.njk"
 
 ---
-If you're using tables in your application and encounter the warning \"tableSearchFilter is not defined,\" follow these troubleshooting steps to resolve the issue.
+If you're using tables in your application and encounter the warning \"tableSearchFilter is not defined,\" follow these troubleshooting steps to resolve the issue. 
 
 ### identify the source of the warning
 1. **understand the error**: this warning often appears when there’s a mismatch between the search input and the actual data linked to the table. it usually occurs if you've deleted or modified the variable that filters your table.
