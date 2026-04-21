@@ -1,5 +1,5 @@
 ---
-title: How to use Matter.js in a React functional component
+title: How to use Matter.js in React functional component
 layout: layouts/post.njk
 date: 2021-02-18
 subtitle: 18th February, 2021
