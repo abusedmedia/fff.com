@@ -44,7 +44,11 @@
   status = 200
   force = true
 
-
+[[redirects]]
+  from = "https://intx.fabiofranchino.com/"
+  to = "https://intx.presenta.workers.dev/"
+  status = 200
+  force = true
 
 [[redirects]]
   from = "/blog/index.html"
